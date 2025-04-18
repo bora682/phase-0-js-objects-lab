@@ -3,8 +3,8 @@
 const attendee = {
   attendeeId: "T001",
   name: "Alice Smith",
-  event: "javascript Conference",
-  updateTicketType: "VIP",
+  event: "JavaScript Conference",
+  ticketType: "VIP",
   ticketPrice: 150.00
 };
 
@@ -26,6 +26,10 @@ function removeEventProperty(attendee) {
 
 function addCheckedInProperty(attendee) {
   attendee.checkedIn = true;
+}
+
+function updateTicketPrice(attendee, newPrice) {
+  attendee.ticketPrice = newPrice;
 }
 
 
